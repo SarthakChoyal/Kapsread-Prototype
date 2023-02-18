@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+			background-color: #fc7e00;
+			height: 45px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 30px;
+		}
+		nav a {
+			color: #FFFFFF;
+			font-size: 25px;
+			font-weight: bold;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.banner {
+			background-image: url('banner-image.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		.banner p {
+			font-size: 36px;
+			font-style: italic;
+		}
+		.row {
+			padding: 50px;
+		}
+		.row h2 {
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.carousel-container {
+			display: flex;
+			overflow-x: scroll;
+		}
+		.carousel-item {
+			width: 300px;
+			margin-right: 20px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		.carousel-item img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact</a>
+		<a href="#">Recent Blogs</a>
+		<a href="#">Recent Reviews</a>
+		<a href="#">Reviews to Come</a>
+	</nav>
+	<div class="banner">
+		<p>"Books are a uniquely portable magic."</p>
+		<p>- Stephen King</p>
+	</div>
+	<div class="row">
+		<h2>Recent Blogs</h2>
+		<div class="carousel-container">
+			<div class="carousel-item">
+				<img src="blog-post-1.jpg">
+				<p>Blog Post Title 1</p>
+			</div>
+			<div class="carousel-item">
+				<img src="blog-post-2.jpg">
+				<p>Blog Post Title 2</p>
+			</div>
+			<div class="carousel-item">
+				<img src="blog-post-3.jpg">
+				<p>Blog Post Title 3</p>
+			</div>
+			<div class="carousel-item">
+				<img src="blog-post-4.jpg">
+				<p>Blog Post Title 4</p>
+			</div>
+			<div class="carousel-item">
+				<img src="blog-post-5.jpg">
+				<p>Blog Post Title 5</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h2>Recent Reviews</h2>
+		<div class="carousel-container">
+			<div class="carousel-item">
+				<img src="review-1.jpg">
+				<p>Review Title 1</p>
+			</div>
+			<div class="carousel-item">
+				

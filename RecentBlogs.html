@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Slider Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .slider {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+      }
+      .slider img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .slider img.active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <img src="image1.jpg" class="active">
+      <img src="image2.jpg">
+      <img src="image3.jpg">
+    </div>
+
+    <script>
+      let sliderImages = document.querySelectorAll('.slider img');
+      let currentImage = 0;
+
+      setInterval(() => {
+        sliderImages[currentImage].classList.remove('active');
+        currentImage = (currentImage + 1) % sliderImages.length;
+        sliderImages[currentImage].classList.add('active');
+      }, 5000);
+    </script>
+  </body>
+</html>
